@@ -1,19 +1,19 @@
-A ready-to-use Ansible playbook for the [Galaxy Tools role][gtr].
+A ready-to-use Combact TB Ansible playbook for the [Galaxy Tools role][gtr].
 
 Before you can use this playbook, you need to install [Ansible][ans] (version
-2.1.2.0+ is required). Note that for the time being, this playbook does not
+2.1.2.0+ is required). Note that for the time being, this playbook might not
 work with Python 3.x.
 
+    $ mkvirtualenv ansible_galaxy
     $ git clone --recursive -b stable-2.1 https://github.com/ansible/ansible
     $ pip install ansible/
 
 To use, clone this repo and provide a list of tools to install via
 `files/tool_list.yaml` file. Then, run the playbook:
 
-    $ git clone https://github.com/afgane/galaxy-tools-playbook.git
+    $ git clone git@github.com:SANBI-SA/ansible_cbt_gx_tools.git
     $ cd galaxy-tools-playbook && ansible-galaxy install -f -r requirements_roles.yml -p roles
-    # Provide a list of tools in files/tool_list.yaml
-    $ ansible-playbook tools.yml -i "localhost," --extra-vars galaxy_tools_api_key=<Admin user API key>
+    $ ansible-playbook tools.yml -i "host," --extra-vars galaxy_tools_api_key=<Admin user API key>
 
 In addition to the output from running the playbook, the installation script
 will log it's progress in `/tmp/galaxy_tool_install.log`.
