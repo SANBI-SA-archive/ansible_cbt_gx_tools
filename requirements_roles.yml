@@ -1,2 +1,2 @@
-- src: https://github.com/galaxyproject/ansible-galaxy-tools.git
+- src: https://github.com/SANBI-SA/ansible-galaxy-tools
   name: galaxyprojectdotorg.galaxy-tools
