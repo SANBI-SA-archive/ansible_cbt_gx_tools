@@ -11,9 +11,9 @@ work with Python 3.x.
 To use, clone this repo and provide a list of tools to install via
 `files/tool_list.yaml` file. Then, run the playbook:
 
-    $ git clone https://github.com/afgane/galaxy-tools-playbook.git
+    $ git clone git@github.com:SANBI-SA/ansible_cbt_gx_tools.git
     $ cd galaxy-tools-playbook && ansible-galaxy install -f -r requirements_roles.yml -p roles
-    $ ansible-playbook tools.yml -i "localhost," --extra-vars galaxy_tools_api_key=<Admin user API key>
+    $ ansible-playbook tools.yml -i "host," --extra-vars galaxy_tools_api_key=<Admin user API key>
 
 In addition to the output from running the playbook, the installation script
 will log it's progress in `/tmp/galaxy_tool_install.log`.
