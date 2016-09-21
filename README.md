@@ -1,8 +1,9 @@
 A ready-to-use Combact TB Ansible playbook for the [Galaxy Tools role][gtr].
 
 Before you can use this playbook, you need to install [Ansible][ans] (version
-2.1.2.0+ is required). Note that for the time being, this playbook does not
+2.1.2.0+ is required). Note that for the time being, this playbook might not
 work with Python 3.x.
+
     $ mkvirtualenv ansible_galaxy
     $ git clone --recursive -b stable-2.1 https://github.com/ansible/ansible
     $ pip install ansible/
