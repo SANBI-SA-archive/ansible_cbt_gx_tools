@@ -1,0 +1,9 @@
+- hosts: cbtgx.sanbi.ac.za
+  gather_facts: False
+  connection: local
+  vars:
+      galaxy_tools_tool_list_files: [ "files/tool_list.yaml" ]
+      galaxy_tools_galaxy_instance_url: http://cbtgx.sanbi.ac.za/
+      galaxy_tools_api_key: a538d00a0ab2f94ba57a2711365604a0
+  roles:
+      - galaxyprojectdotorg.galaxy-tools
