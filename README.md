@@ -29,7 +29,7 @@ House work - after installation:
 
     $ vi shed_tools/environment_settings/GATK2_PATH//iuc/gatk2/a3247b69fa59/env.sh
     
-Add shed_tools/gatk_sanbi_uwc/3.5/sanbi-uwc/package_gatk_sanbi_uwc_3_5/3ea25d636c8 as the GATK_PATH.
+Add shed_tools/gatk_sanbi_uwc/3.5/sanbi-uwc/package_gatk_sanbi_uwc_3_5/3ea25d636c8/jars as the GATK_PATH.
 
 
 Updates
