@@ -23,6 +23,15 @@ your local machine. To target a different instance of Galaxy, edit `tools.yml`
 and set a URL to the Galaxy instance. You can also set the API key there not
 to have to provide it on the command line.
 
+House work - after installation:
+
+1) Install the SANBI GATK2 package from testtoolshed. (package_gatk_sanbi_uwc_3_5)
+
+    $ vi shed_tools/environment_settings/GATK2_PATH//iuc/gatk2/a3247b69fa59/env.sh
+    
+Add shed_tools/gatk_sanbi_uwc/3.5/sanbi-uwc/package_gatk_sanbi_uwc_3_5/3ea25d636c8 as the GATK_PATH.
+
+
 Updates
 -------
 To update the version of the galaxy-tools role, run the following command
